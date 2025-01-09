@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses</title>
+    <style>
+        div{
+            display: inline-block; /* Serve para deixar todas as div's na mesma linha. Sem isso, esse arquivo ficaria com as divs todas uma em cima da outra */
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px; /* Altura */
+            width: 200px; /* Largura */
+        }
+
+        /* Pseudo-classes servem, essencialmente, para marcar o estado em que se encontra. Por exemplo, a p-classe "hover" serve para quandoo o usuário tiver com o mouse em cima do elemento. As pseudo-classes são ditas com dois ponto (:), assim como classe e id são . e #
+        */
+        div:hover{
+            background-color: rgb(184, 184, 184);
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>

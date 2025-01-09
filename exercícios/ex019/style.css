@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(189, 238, 238);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(99, 122, 122);
+}
+
+/* Basicamente criei um "nome" para o título principal, o que me permite editar SOMENTE ele 
+    Em HTML é id        = em CSS é #
+    Em HTML é class     = em CSS é .
+*/
+#principal{ 
+    text-align: center;
+    background-color: rgb(99, 122, 122);
+    color: white;
+}
+
+h2{
+    color: rgb(129, 161, 161);
+}
+
+.basico{
+    background-image: linear-gradient(to right, rgb(140, 212, 162), rgb(189, 238, 238) 56%);
+    color: rgb(78, 116, 89);
+}
+
+.intermediario{
+    background-image: linear-gradient(to right, rgb(231, 222, 140), rgb(189, 238, 238) 56%);
+    color: rgb(121, 116, 76);
+}
+
+.avancado{
+    background-image: linear-gradient(to right, rgb(231, 140, 140), rgb(189, 238, 238) 56%);
+    color: rgb(119, 74, 74);
+}

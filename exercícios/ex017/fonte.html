@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap'); /* Google Fonts */
+
+        body{
+            font-family: "Work Sans"; /* Principais fontes que tem em todos os computadores, mas não em todos os dispositivos: Arial, Verdana e Helvetica. É importante declarar mais de uma fonte na font-family, pois caso o navegador não tenha suporte para uma determinada fonte, ele "puxa" a segunda que foi indicada */
+            font-size: 1em; /* 16px é o padrão;  */
+            /* Medidas Absolutas (RECOMENDADO USAR PX)
+            cm, mm, in (polegada), px, pt, pc 
+            
+            Medidas Relativas (RECOMENDADO USAR EM)
+            em (relativo ao M maiúsculo da fonte), ex (relativo ao x minúsculo da fonte), rem, vw (porcentagem da largura da viewport/tela), %
+
+            16px GERALMENTE = 1em
+            */
+
+            font-weight: normal;
+            /* lighter, normal, bold e bolder*/
+            font-style: italic;
+        }
+
+        h1 {
+        /* Ordem da shorthand font:
+        - font-style > font-weight > font-size > font-family*/
+            font: italic bolder 3em 'Work Sans', sans serif;
+
+            /* Isso serve para diminuir a quantdade de linhas para determinar a fonte. Substitui um código como esse:
+
+            font-family: 'Work Sans', sans serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis corporis atque aliquam inventore nihil cum vero, dolor ea tempora. Aspernatur eaque nulla assumenda et consectetur? Aspernatur hic quibusdam a unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum culpa ea enim nulla delectus quos animi quidem qui perspiciatis dolore veritatis voluptate soluta, ipsa quibusdam nesciunt, nam sapiente, voluptas maiores.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores fugiat rem voluptatem vitae eveniet impedit ab amet laboriosam velit voluptate non odio veritatis incidunt, qui molestias aperiam explicabo, nisi ipsa.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, eveniet odio. Aliquam porro quos incidunt debitis quisquam asperiores voluptatem totam deleniti, iste reprehenderit vel commodi dignissimos ea a, voluptas natus.</p>
+</body>
+</html>

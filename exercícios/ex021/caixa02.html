@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        header > h1{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 5em;
+            margin: 0px;
+            margin-bottom: 15px;
+        }
+        nav{
+            background-color: rgb(168, 168, 168);
+            padding: 3px;
+            border-radius: 5px;
+            box-shadow: 1px 2px 5px #49494993;
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        section#assuntos > h1{
+            font-weight: bold;
+            text-align: center;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 2px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        article{
+            background-color: lightgray;
+            padding: 10px;
+            margin: 5px;
+        }
+        article > aside{
+            background: rgb(175, 175, 175);
+            width: 166px;
+            margin: 15px 0px 7px 10px;
+        }
+        article > aside > p{
+            margin: 0px;
+        }
+        article > p{
+            text-align: justify;
+            text-indent: 20px;
+            margin: 0px;
+            margin-top: 10px;
+        }
+        article > h2{
+            margin: 0px;
+        }
+        #bola{ /* Para fazer QUALQUER bola, sempre colocar o border radius em 50% */
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header> <!-- Cabeçalho -->
+        <h1>Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!-- Conteúdo principal -->
+        <section id="assuntos">
+            <h1>Esportes, Política e Tecnologia</h1>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Corinthians</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea facere laboriosam accusamus officiis nihil quis ipsam ipsa voluptatum explicabo iusto mollitia id commodi nesciunt, consequuntur suscipit architecto! Mollitia, hic possimus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga maxime inventore autem asperiores quae? Odit natus sint, architecto molestiae enim cum adipisci delectus porro mollitia labore repellendus magni deserunt est? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolores rerum quibusdam excepturi esse. Ex voluptatum labore consectetur iusto totam ut recusandae consequatur excepturi quisquam! Totam recusandae omnis porro assumenda.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, officia fugiat illo dolorum, voluptas dolorem maxime vel repellat nisi veritatis blanditiis ipsum natus expedita assumenda dicta tempore eum quam ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente hic similique ipsam eaque tempora dolorem voluptas fugit debitis, nostrum laborum numquam labore tenetur, obcaecati, voluptatum mollitia excepturi quo inventore rerum!</p>
+                <aside>
+                    <p>Artigo escrito por: aaaa</p>
+                </aside>
+            </article>
+        </section><!-- Todas as tags são como "organizadores" do conteúdo, para evitar que fique colocando div a todo momento -->
+    </main>
+    <footer> <!-- Rodapé -->
+        <p>Desenvolvido por tutui!</p>
+    </footer>
+
+    <div id="bola">
+    </div>
+
+<!--
+    Também conseguimos criar bordas personalizadas para as boxes. Basta criar um arquivo .png com dimensões 80x80 e fazer a borda, como se estivesswe "enfeitando" uma caixa
+-->
+
+
+</body>
+</html>

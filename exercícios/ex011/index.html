@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do navegador.</p>
+
+    <picture>
+        
+        <source media="(max-width: 750px)" srcset="imagens/FotoP.png" type="image/png"> <!-- SERVE PARA QUE, AO REDIMENSIONAR O NAVEGADOR PARA X PIXELS, A IMAGEM MUDE PARA P, DE FORMA QUE NÃO FICA DESONFIGURADO E FEIO >:)-->
+        <source media="(max-width: 1000px)" srcset="imagens/FotoM.png" type="image/png">
+        <img src="imagens/FotoG.png" alt="Imagem flexível"> <!-- OS SOURCES DEVEM ESTAR NA ORDEM DE MAIOR PRA MENOR, DE BAIXO PRA CIMA. A BASE É A IMAGEM "PRINCIPAL", OS SOURCES SÃO PARA DEIXÁ-LA FLEXÍVEL-->
+    </picture>
+
+    <h1>Reproduzindo áudios</h1>
+    <p>Reproduzindo áudios em HTML5</p>
+    <audio src="midia/Jingle Bells - The Soundlings.mp3" controls autoplay></audio> <!-- TIPOS DE ARQUIVOS DE ÁUDIO: MP3, WAV E OGG. ESSE É O JEITO MAIS SIMPLES, SEM GRAÇA DE FAZER -->
+<br><br>
+    <audio preloads="metadata" autoplay controls loop>
+        <source src="midia/Jingle Bells - The Soundlings.mp3" type="audio/mpeg">
+        <source src="midia/Jingle Bells - The Soundlings.ogg" type="audio/ogg">
+        <source src="midia/Jingle Bells - The Soundlings.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Jingle Bells - The Soundlings.mp3">Clique aqui para baixar o arquivo MP3</a></p> <!-- OS SOURCES SÃO COMO "TENTATIVAS" DE BAIXAR O ARQUIVO EM DIFERENTES FORMATOS; PRIMEIRO ELE TENTA EM MP3, DEPOIS WAV E DEPOIS OGG-->
+    </audio>
+</body>
+</html>

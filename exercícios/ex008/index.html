@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras fomratações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em JavaScript</p> <!-- ISSO SERVE PARA FORMATAR AS LETRAS COMO CÓDIGO-->
+    <pre>
+        <code>
+<mark>
+num = int(input('Digite um número'))
+if num % 2 == 0:
+    print(f'O número {num} é PAR')
+else:
+    print(f'O número {num} é ÍMPAR')
+print('Fim do programa')
+</mark>
+        </code>
+    </pre> <!-- ESSA TAG "PRE" É PARA COLOCAR NO SITE LITERALMENTE DO JEITO QUE VC ESCREVEU O CÓDIGO (COM LINHAS, PARÁGRAFOS, DE QUALQUER JEITO!). DÁ PARA CRIAR VÁRIAS QUEBRAS DE LINHAS COM ESSA TAG, SEM PRECISAR USAR A TAG <BR>-->
+        <h2>Citações</h2>
+        <p>Como diria um pai de um amigo: <q>o computador é um burro muito rápido</q></p> <!-- A TAG <Q> DÁ SENTIDO DE CITAÇÃO AO TEXTO-->
+        <h2>Citações completas</h2>
+        <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+        <blockquote cite="NOME DO SITE">
+            A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+        </blockquote> <!-- QUEBRA DE LINHA E DESLOCAMENTO PARA A DIREITA -->
+        <h2>Abreviações</h2>
+        <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>!</p> <!-- ESSAS ABREVIAÇÕES SERVEM PARA, AO PASSAR O CURSOS POR CIMA DA ABREVIAÇÃO, APARECE O TEXTO DO TITLE-->
+        <h2>Texto invertido</h2>
+        <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p> <!-- INVERTE O TEXTO PARA "RIGHT TO LEFT"... NÃO TEM MUITA UTILIDADE KKK-->
+</body>
+</html>

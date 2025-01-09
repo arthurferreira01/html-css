@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em HTML5</title>
+    <link rel="icon" sizes="16x16" href="https://osu.ppy.sh/images/favicon/favicon-16x16.png">
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado em meu servidor</p>
+
+    <video src="midia/12708096_1080_1920_60fps.mp4" width="560" controls></video> <!-- ESSE É O JEITO MASI SIMPLES DE SE COLCOAR UM VÍDEO, SENDO FEITO SOMENTE POR UM ÚNICO FORMATO.-->
+
+    <video width="560" poster="midia/wallpaper.png" autoplay muted loop> <!-- O "CONTROLS" É PARA COLOCAR NO VÍDEO O PLAYER PAUSE E O CONTROLADOR DE MINUTAGEM. O "POSTER" É PARA DEFINIR A THUMB DO VÍDEO-->
+        <source src="midia/12708096_1080_1920_60fps.webm" type="video/webm">
+        <source src="midia/12708096_1080_1920_60fps.mov" type="video/mov">
+        <source src="midia/12708096_1080_1920_60fps.m4v" type="video/m4v">
+        <source src="midia/12708096_1080_1920_60fps.mp4" type="video/mp4">
+        <p>Seu o navegador não tem compatibilidade com reprodução de vídeos </p>
+    </video> <!-- A ORDEM DOS SOURCES É ESSENCIAL. O NAVEGADOR TENTA PUXAR OS VÍDEOS NA ORDEM EM QUE FORAM COLOCADOS: WEBM, MOV, M4V E MP4-->
+
+    <!-- ESSA FORMA DE COLCOAR VÍDEOS NO SITE, APESAR DE SER SIMPLES, É PERIGOSA, POIS CADA PESSOA QUE ENTRAR, TERÁ DE BAIXAR O VÍDEO, E ISSO CONSOME MUITA BANDA DE INTERNET -->
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <p>Utilizando do método de "incorporação" do própio YouTube, é possível colocar vídeos assim. Basta clicar no vídeo, ir em Compartilhar e Incorporar</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=TyRt_hDXehuzYGYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
