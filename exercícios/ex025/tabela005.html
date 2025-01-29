@@ -1,11 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        caption{
+            font-weight: bold;
+            font-size: 1.3em;
+            padding: 5px;
+        }
+
+        col.cnome{
+            background-color: aquamarine;
+        }
+
+        col.csexo{
+            background-color: yellow;
+        }
+
+        col.cgrupo{
+            background-color: blueviolet;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup> <!-- As colunas devem estar na ordem da tabela -->
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cgrupo" span="2"> <!-- Esse "span" faz com que a classe envolva um número X de colunas -->
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>32</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>H</td>
+            <td>21</td>
+            <td>Desenvolvedor</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>H</td>
+            <td>19</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Helena</td>
+            <td>F</td>
+            <td>41</td>
+            <td>Bióloga</td>
+        </tr>
+        <tr>
+            <td>Nicole</td>
+            <td>F</td>
+            <td>24</td>
+            <td>Contadora</td>
+        </tr>
+        <tr>
+            <td>Santos</td>
+            <td>H</td>
+            <td>21</td>
+            <td>Militar</td>
+        </tr>
+
+    </table>
 </body>
 </html>
