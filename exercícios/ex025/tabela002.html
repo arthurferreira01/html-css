@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            color: white;
+            background-color: #383838;
+        }
+
+        thead > tr > th{ /* Isso faz com que o cabeçalho da tabela fique "colado" nela, assim quando for rolando os dados para baixo, o cabeçalho da tabela vai junto */
+            position: sticky;
+            top: 0;
+            background-color: #383838;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(2n - 1) { /* Serve para dar efeito zebrado na tabela. A fórmula pode ser alterada para mudar a quantidade de linhas "zebradas" */
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: white;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas Grandes</h1>
+<!--
+        Anatomia das tabelas grandes:
+        TABLE
+            CAPTION (LEGENDA)
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+
+        Quando usar TD e TH: TD utiliza-se para dados; TH usa-se para "títulos" das linhas e colunas da tabela.
+
+        Para TH's, o parâmetro "scope" é essencila para indicar se aquele título é da linha ou da coluna da tabela.
+-->
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.268.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num">210.147.125</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta culpa dolorem perferendis sapiente ex fugit qui a fuga commodi error illum ut incidunt tempore, odio nam aperiam repellendus tenetur? Dolorum.
+    </p>
+</body>
+</html>
